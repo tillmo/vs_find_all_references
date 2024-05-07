@@ -1,4 +1,4 @@
-from supplier_item import SupplierItem, process_item
+from supplier_item import SupplierItem
 class PurchaseInvoice:
     def __init__(self,items : list[SupplierItem]):
         self.items = items 

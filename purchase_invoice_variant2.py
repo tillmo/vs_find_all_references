@@ -1,7 +1,7 @@
-from supplier_item import SupplierItem, process_item
+import supplier_item
 class PurchaseInvoice:
     def __init__(self,items): 
-        self.items = [SupplierItem()]
+        self.items = [supplier_item.SupplierItem()]
     def process(self):    
         self.items = [i.process_item() for i in self.items]
 
